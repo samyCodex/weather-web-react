@@ -30,7 +30,7 @@ const WeatherApp = () => {
     setError(null);
     try {
       const response = await axios.get(
-        `http://localhost:3004/api/weather?city=${city}`
+        `https://weather-kfmtok34k-samycode3s-projects.vercel.app/api/weather?city=${city}`
       );
       setWeather(response.data);
     } catch (err) {
